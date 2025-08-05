@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Men’s Wear - Clothify</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"> <img src="WhatsApp Image 2025-08-04 at 3.39.48 PM.jpeg" alt="Logo" width="80" height="80" class="me-2"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMen">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMen">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Men</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="men.html#summer">Summer Collection</a></li>
+              <li><a class="dropdown-item" href="men.html#winter">Winter Collection</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Women</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="women.html#summer">Summer Collection</a></li>
+              <li><a class="dropdown-item" href="women.html#winter">Winter Collection</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex me-3">
+          <input class="form-control me-2" placeholder="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+        <button class="btn btn-outline-secondary">
+          <i class="bi bi-cart"></i> Cart <span class="badge bg-danger" id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <section class="py-4 bg-secondary text-white text-center">
+    <div class="container">
+      <h1 class="mb-1">Men’s Wear</h1>
+      <p class="mb-0">Choose from Summer & Winter collections</p>
+    </div>
+  </section>
+
+  <!-- Summer Collection -->
+  <section id="summer" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Summer Collection</h2>
+      <div class="row g-4">
+        <!-- Sample product card -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="shirt men.jpeg" class="card-img-top" alt="Product">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Men's Summer Shirt</h5>
+              <p class="card-text">Light cotton shirt for hot days.</p>
+              <div class="mt-auto">
+                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#productModal1">View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- More cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Winter Collection -->
+  <section id="winter" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Winter Collection</h2>
+      <div class="row g-4">
+        <!-- Sample product card -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="jacket.jpeg" class="card-img-top" alt="Product">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Men's Winter Jacket</h5>
+              <p class="card-text">Warm and stylish jacket.</p>
+              <div class="mt-auto">
+                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#productModal2">View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- More cards -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Modal 1 -->
+  <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModal1Label">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productModal1Label">Men's Summer Shirt</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Description: Breathable cotton shirt, slim fit.</p>
+          <p>Price: $29.99</p>
+          <div class="mb-3">
+            <label for="size1" class="form-label">Size:</label>
+            <select id="size1" class="form-select">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="qty1" class="form-label">Quantity:</label>
+            <input type="number" id="qty1" class="form-control" value="1" min="1">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary add-to-cart" data-product="Men's Summer Shirt" data-price="29.99">Add to Cart</button>
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModal2Label">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productModal2Label">Men's Winter Jacket</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Description: Insulated jacket with hood.</p>
+          <p>Price: $89.99</p>
+          <div class="mb-3">
+            <label for="size2" class="form-label">Size:</label>
+            <select id="size2" class="form-select">
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="qty2" class="form-label">Quantity:</label>
+            <input type="number" id="qty2" class="form-control" value="1" min="1">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary add-to-cart" data-product="Men's Winter Jacket" data-price="89.99">Add to Cart</button>
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="py-5">
+    <div class="container">
+      <h3 class="mb-4">FAQ</h3>
+      <div class="accordion" id="faqMen">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqMenOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#menFaq1">
+              How long is delivery?
+            </button>
+          </h2>
+          <div id="menFaq1" class="accordion-collapse collapse show" data-bs-parent="#faqMen">
+            <div class="accordion-body">
+              Delivery takes 5-7 business days within the country.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqMenTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menFaq2">
+              Can I exchange sizes?
+            </button>
+          </h2>
+          <div id="menFaq2" class="accordion-collapse collapse" data-bs-parent="#faqMen">
+            <div class="accordion-body">
+              Yes, size exchanges are allowed within 14 days.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-4 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-2">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="men.html" class="text-light">Men’s Wear</a></li>
+            <li><a href="women.html" class="text-light">Women’s Wear</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-2">
+          <h6>Follow Us</h6>
+          <div class="d-flex gap-2">
+            <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2">
+          <h6>Contact</h6>
+          <p class="small mb-0">support@MODACO.com</p>
+        </div>
+      </div>
+      <div class="text-center small mt-3">&copy; 2025 MODA CO.</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
